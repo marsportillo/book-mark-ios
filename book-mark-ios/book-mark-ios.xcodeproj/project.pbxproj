@@ -12,6 +12,7 @@
 		44949D01211AFC970079C8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44949CFF211AFC970079C8A9 /* Main.storyboard */; };
 		44949D03211AFC990079C8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44949D02211AFC990079C8A9 /* Assets.xcassets */; };
 		44949D06211AFC990079C8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44949D04211AFC990079C8A9 /* LaunchScreen.storyboard */; };
+		F6AD752124B9A06CF1E49C66 /* Pods_book_mark_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA255291D4888ADB4F15B13 /* Pods_book_mark_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		44949D02211AFC990079C8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44949D05211AFC990079C8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44949D07211AFC990079C8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA255291D4888ADB4F15B13 /* Pods_book_mark_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_book_mark_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A329A59314F2E1B4A11C3DB6 /* Pods-book-mark-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-mark-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-book-mark-ios/Pods-book-mark-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		AD3675004907B1BF8EBBE615 /* Pods-book-mark-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-mark-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-book-mark-ios/Pods-book-mark-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AD752124B9A06CF1E49C66 /* Pods_book_mark_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				44949CFA211AFC970079C8A9 /* book-mark-ios */,
 				44949CF9211AFC970079C8A9 /* Products */,
+				951565FBA7E70B965B0ED9F2 /* Pods */,
+				BC73D58DB80A1FC6F261B889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "book-mark-ios";
 			sourceTree = "<group>";
 		};
+		951565FBA7E70B965B0ED9F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A329A59314F2E1B4A11C3DB6 /* Pods-book-mark-ios.debug.xcconfig */,
+				AD3675004907B1BF8EBBE615 /* Pods-book-mark-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC73D58DB80A1FC6F261B889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BA255291D4888ADB4F15B13 /* Pods_book_mark_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44949D0A211AFC990079C8A9 /* Build configuration list for PBXNativeTarget "book-mark-ios" */;
 			buildPhases = (
+				04DC855C9A3F90CDFE742054 /* [CP] Check Pods Manifest.lock */,
 				44949CF4211AFC970079C8A9 /* Sources */,
 				44949CF5211AFC970079C8A9 /* Frameworks */,
 				44949CF6211AFC970079C8A9 /* Resources */,
+				C215B9B197BDE31A01BD6551 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04DC855C9A3F90CDFE742054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-book-mark-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C215B9B197BDE31A01BD6551 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-book-mark-ios/Pods-book-mark-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLocation/SwiftLocation.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-book-mark-ios/Pods-book-mark-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44949CF4211AFC970079C8A9 /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		44949D0B211AFC990079C8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A329A59314F2E1B4A11C3DB6 /* Pods-book-mark-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -297,6 +367,7 @@
 		};
 		44949D0C211AFC990079C8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3675004907B1BF8EBBE615 /* Pods-book-mark-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
