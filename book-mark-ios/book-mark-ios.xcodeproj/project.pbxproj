@@ -12,6 +12,13 @@
 		44949D01211AFC970079C8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44949CFF211AFC970079C8A9 /* Main.storyboard */; };
 		44949D03211AFC990079C8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44949D02211AFC990079C8A9 /* Assets.xcassets */; };
 		44949D06211AFC990079C8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44949D04211AFC990079C8A9 /* LaunchScreen.storyboard */; };
+		44FB76BC211C85D200153EA0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB76BB211C85D200153EA0 /* HomeViewController.swift */; };
+		44FB76BE211C870D00153EA0 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB76BD211C870D00153EA0 /* WriteViewController.swift */; };
+		44FB76C0211C872C00153EA0 /* TakePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB76BF211C872C00153EA0 /* TakePhotosViewController.swift */; };
+		44FB76C2211C874F00153EA0 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB76C1211C874F00153EA0 /* SpeechViewController.swift */; };
+		44FB76CB211C87B500153EA0 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB76CA211C87B500153EA0 /* NavigationController.swift */; };
+		44FB76CD211C87C400153EA0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB76CC211C87C400153EA0 /* TabBarController.swift */; };
+		44FB76D0211C883F00153EA0 /* BookedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB76CF211C883F00153EA0 /* BookedViewController.swift */; };
 		F6AD752124B9A06CF1E49C66 /* Pods_book_mark_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA255291D4888ADB4F15B13 /* Pods_book_mark_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +30,13 @@
 		44949D02211AFC990079C8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44949D05211AFC990079C8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44949D07211AFC990079C8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FB76BB211C85D200153EA0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		44FB76BD211C870D00153EA0 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		44FB76BF211C872C00153EA0 /* TakePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotosViewController.swift; sourceTree = "<group>"; };
+		44FB76C1211C874F00153EA0 /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		44FB76CA211C87B500153EA0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		44FB76CC211C87C400153EA0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		44FB76CF211C883F00153EA0 /* BookedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookedViewController.swift; sourceTree = "<group>"; };
 		5BA255291D4888ADB4F15B13 /* Pods_book_mark_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_book_mark_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A329A59314F2E1B4A11C3DB6 /* Pods-book-mark-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-mark-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-book-mark-ios/Pods-book-mark-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		AD3675004907B1BF8EBBE615 /* Pods-book-mark-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-mark-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-book-mark-ios/Pods-book-mark-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +75,89 @@
 		44949CFA211AFC970079C8A9 /* book-mark-ios */ = {
 			isa = PBXGroup;
 			children = (
-				44949CFB211AFC970079C8A9 /* AppDelegate.swift */,
-				44949CFD211AFC970079C8A9 /* ViewController.swift */,
-				44949CFF211AFC970079C8A9 /* Main.storyboard */,
+				44FB76CE211C882B00153EA0 /* Booked */,
+				44FB76C9211C879200153EA0 /* Misc */,
+				44FB76C8211C878100153EA0 /* Subclasses */,
+				44FB76C7211C877B00153EA0 /* Main */,
 				44949D02211AFC990079C8A9 /* Assets.xcassets */,
+				44FB76C3211C875600153EA0 /* Home */,
+				44FB76C4211C875D00153EA0 /* Write */,
+				44FB76C5211C876400153EA0 /* TakePhotos */,
+				44FB76C6211C876B00153EA0 /* Speech */,
+			);
+			path = "book-mark-ios";
+			sourceTree = "<group>";
+		};
+		44FB76C3211C875600153EA0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				44FB76BB211C85D200153EA0 /* HomeViewController.swift */,
+			);
+			name = Home;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		44FB76C4211C875D00153EA0 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				44FB76BD211C870D00153EA0 /* WriteViewController.swift */,
+			);
+			name = Write;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		44FB76C5211C876400153EA0 /* TakePhotos */ = {
+			isa = PBXGroup;
+			children = (
+				44FB76BF211C872C00153EA0 /* TakePhotosViewController.swift */,
+			);
+			name = TakePhotos;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		44FB76C6211C876B00153EA0 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				44FB76C1211C874F00153EA0 /* SpeechViewController.swift */,
+			);
+			name = Speech;
+			path = "New Group3";
+			sourceTree = "<group>";
+		};
+		44FB76C7211C877B00153EA0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				44949CFF211AFC970079C8A9 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		44FB76C8211C878100153EA0 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				44949CFD211AFC970079C8A9 /* ViewController.swift */,
+				44FB76CA211C87B500153EA0 /* NavigationController.swift */,
+				44FB76CC211C87C400153EA0 /* TabBarController.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		44FB76C9211C879200153EA0 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				44949CFB211AFC970079C8A9 /* AppDelegate.swift */,
 				44949D04211AFC990079C8A9 /* LaunchScreen.storyboard */,
 				44949D07211AFC990079C8A9 /* Info.plist */,
 			);
-			path = "book-mark-ios";
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		44FB76CE211C882B00153EA0 /* Booked */ = {
+			isa = PBXGroup;
+			children = (
+				44FB76CF211C883F00153EA0 /* BookedViewController.swift */,
+			);
+			path = Booked;
 			sourceTree = "<group>";
 		};
 		951565FBA7E70B965B0ED9F2 /* Pods */ = {
@@ -204,8 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FB76CD211C87C400153EA0 /* TabBarController.swift in Sources */,
 				44949CFE211AFC970079C8A9 /* ViewController.swift in Sources */,
 				44949CFC211AFC970079C8A9 /* AppDelegate.swift in Sources */,
+				44FB76BE211C870D00153EA0 /* WriteViewController.swift in Sources */,
+				44FB76BC211C85D200153EA0 /* HomeViewController.swift in Sources */,
+				44FB76C2211C874F00153EA0 /* SpeechViewController.swift in Sources */,
+				44FB76CB211C87B500153EA0 /* NavigationController.swift in Sources */,
+				44FB76C0211C872C00153EA0 /* TakePhotosViewController.swift in Sources */,
+				44FB76D0211C883F00153EA0 /* BookedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/book-mark-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/book-mark-ios/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/book-mark-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/book-mark-ios/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
